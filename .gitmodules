@@ -1,0 +1,3 @@
+[submodule "MobileSDK"]
+	path = MobileSDK
+	url = https://github.com/forcedotcom/SalesforceMobileSDK-iOS.git
