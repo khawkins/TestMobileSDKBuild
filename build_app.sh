@@ -7,7 +7,7 @@ while [ $iterations -lt 10 ]; do
 	iterations=`expr $iterations + 1`
 	echo "Build $iterations"
 	rm -rf ~/Library/Developer/Xcode/DerivedData/TestMobileSDKBuild-*
-	xcodebuild -project TestMobileSDKBuild.xcodeproj -scheme TestMobileSDKBuild -sdk iphonesimulator -configuration Debug clean build > /dev/null 2>&1
+	xcodebuild -project TestMobileSDKBuild.xcodeproj -scheme TestMobileSDKBuild -sdk iphonesimulator -configuration Debug clean build > /dev/null
 	status=$?
 	if [ $status -eq 0 ]; then
 		success=`expr $success + 1`
